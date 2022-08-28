@@ -22,9 +22,17 @@ function cuentaPorFavor(comidas) {
   //   }
   // ]
   // cuentaPorFavor(comidas) devuelve => 33
-
   // Tu código aca:
+
+
+  // var sumaTotal = 0
+  //sumaTotal = sumaTotal + comida[i].cantidad  * comida[i].precio
   
+  var sumaTot= 0
+  for( var i=0; i<comidas.length; i++) {
+    sumaTot= sumaTot + comidas[i].cantidad  * comidas[i].precio
+  }
+  return sumaTot
 }
 
 // No modifiques nada debajo de esta linea //

@@ -12,7 +12,19 @@ function soloStrings(array) {
 
   // Tu código aca:
   
+  nvoArray= []
+  
+  for (i=0; i<array.length; i++) {
+
+  if(typeof array[i]=='string' ){
+  nvoArray.push(array[i])
+} 
+
 }
+ return nvoArray
+}
+
+
 
 // No modifiques nada debajo de esta linea //
 

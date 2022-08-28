@@ -13,6 +13,26 @@ function masFrecuente(array) {
   // Nota: Los numeros pueden NO estar ordenados
 
   // Tu código aca:
+  
+  var misNum = new Map();
+ 
+  for(i=0; i<array.length; i++){
+    if(misNum.get(array[i]) == undefined){
+      misNum.set(array[i], 1)
+    }
+    else{ 
+      misNum.set(array[i], misNum.get(array[i])+1)
+    }
+  }
+  
+  var keyMax, valueMax
+  misNum.forEach((value, key) => {
+    if(keyMax==undefined || value > valueMax){
+      keyMax = key
+      valueMax = value
+    }
+  });
+  return keyMax
 
 }
 

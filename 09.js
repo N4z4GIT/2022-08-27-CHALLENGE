@@ -20,6 +20,18 @@ function todos(fn) {
   //  });
   // devuelve false.
 
+
+
+  Array.prototype.todos= function(fn){
+    for(i=0; i<this.length; i++) {
+      if(fn(this[i]) == false) {
+        return false
+      }
+     
+
+    }
+   return true
+  }
 }
 
 // No modifiques nada debajo de esta linea //
